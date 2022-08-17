@@ -1,7 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-}
+const withImages = require('next-images')
 
-module.exports = nextConfig
+const withTM = require('next-transpile-modules')([
+  'antd-mobile',
+])
+
+module.exports = withTM(withImages({
+
+}))

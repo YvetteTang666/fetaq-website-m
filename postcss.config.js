@@ -14,7 +14,7 @@ module.exports = {
             rootValue: 37.5,
             unitPrecision: 3,
             propList: ['*'],
-            selectorBlackList: [/^\.html/], //排除html样式
+            selectorBlackList: ['.ft'], //排除字体样式不转为rem
             replace: true,
             mediaQuery: false,
             minPixelValue: 0,
