@@ -67,7 +67,7 @@ export default function HeroBanner() {
                     ? <div className={styles.MHeroBannerImageWrapper}>
                         <Image layout='responsive' loader={() => item.url} src='image.png' width={375} height={211} />
                         {
-                            item.text ? <div className={styles.MHeroBannerImageText} style={{ color: `${item.text.color || '#ffffff'}` }}>
+                            item.text ? <div className={styles.MHeroBannerImageText} style={{ color: `${item.text.color || '#ffffff'}`, fontSize: `${item.text.fontSize || '16px'}` }}>
                                 {item.text.content}
                             </div> : null
                         }

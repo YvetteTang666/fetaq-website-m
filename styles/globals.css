@@ -13,6 +13,8 @@ a {
 
 * {
   box-sizing: border-box;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,4 +26,9 @@ a {
     background: black;
   }
 }
+
+::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
+}
+
 
