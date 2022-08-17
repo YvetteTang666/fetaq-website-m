@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { useEffect } from 'react'
 import Header from '../header/Header'
+import styles from './Layout.module.scss'
 
 export default function Layout({ children }) {
     useEffect(() => {
@@ -17,7 +18,7 @@ export default function Layout({ children }) {
             </Head>
             {/* Page Header */}
             <Header></Header>
-            <div>
+            <div className={styles.MLayoutContent}>
                 {children}
             </div>
         </>
