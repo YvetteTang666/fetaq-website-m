@@ -31,4 +31,42 @@ a {
   display: none; /* Chrome Safari */
 }
 
+.textL {
+  text-align: left;
+}
+.textC {
+  text-align: center;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
+.mr16 {
+  margin-right: 16px;
+}
+.mt6 {
+  margin-top: 6px;
+}
+.mb30 {
+  margin-bottom: 30px;
+}
+.flexC {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pr30 {
+  padding-right: 30px;
+}
+.pl30 {
+  padding-left: 30px;
+}
+.pt18 {
+  padding-top: 18px;
+}
+.pb40 {
+  padding-bottom: 40px;
+}
 
