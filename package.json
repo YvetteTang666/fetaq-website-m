@@ -11,12 +11,14 @@
   "dependencies": {
     "amfe-flexible": "^2.2.1",
     "antd-mobile": "^5.21.0",
+    "antd-mobile-icons": "^0.3.0",
     "autoprefixer": "^10.4.8",
     "classnames": "^2.3.1",
     "next": "12.2.4",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^7.7.2",
     "postcss-pxtorem": "^6.0.0",
+    "prop-types": "^15.8.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.54.3"

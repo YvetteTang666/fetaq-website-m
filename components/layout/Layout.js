@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { useEffect } from 'react'
 import Header from '../header/Header'
 import styles from './Layout.module.scss'
+import Footer from '../footer/Footer'
 
 export default function Layout({ children }) {
     useEffect(() => {
@@ -19,7 +20,10 @@ export default function Layout({ children }) {
             {/* Page Header */}
             <Header></Header>
             <div className={styles.MLayoutContent}>
+                {/* Page Content */}
                 {children}
+                {/* Page Footer */}
+                <Footer></Footer>
             </div>
         </>
     )
