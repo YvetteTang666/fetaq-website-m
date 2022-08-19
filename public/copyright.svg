@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="15px" viewBox="0 0 12 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 20</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页" transform="translate(-20.000000, -4566.000000)">
+            <g id="footer" transform="translate(0.000000, 4291.000000)">
+                <g id="编组-20" transform="translate(20.000000, 275.000000)">
+                    <circle id="椭圆形" stroke="#7E7E7E" stroke-width="0.75" cx="6" cy="8.3" r="5.625"></circle>
+                    <text id="c" font-family="SourceHanSansCN-Light, Source Han Sans CN" font-size="14" font-weight="300" fill="#7E7E7E">
+                        <tspan x="2.2" y="12">c</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

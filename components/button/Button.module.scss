@@ -7,4 +7,12 @@
     &.active {
         filter: invert(100);
     }
+    &.rectangular {
+        padding: 0;
+        border-radius: 0;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        width: 100%;
+    }
 }

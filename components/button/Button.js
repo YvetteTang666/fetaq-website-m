@@ -1,5 +1,6 @@
 import styles from './Button.module.scss'
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default class Button extends React.Component {
     constructor(props) {
@@ -10,7 +11,7 @@ export default class Button extends React.Component {
         this.btnRef = React.createRef()
     }
     clickBtn = () => {
-        this.props.onBtnClick()
+        this.props.onBtnClick && this.props.onBtnClick()
     }
     endFn = () => {
         this.setState({
@@ -37,17 +38,31 @@ export default class Button extends React.Component {
     }
 
     render() {
-        const { children, color, background } = this.props
+        const { children, color, background, shape } = this.props
         const { btnActive } = this.state
+        const _color = color || '#101820'
         return (
             <div ref={this.btnRef}
-                onClick={this.clickBtn.bind(this)} className={[styles.MButtonWrapper, btnActive ? styles.active : ''].join(' ')}
+                onClick={this.clickBtn.bind(this)}
+                className={[styles.MButtonWrapper, btnActive ? styles.active : '', shape === 'rectangular' ? styles.rectangular : ''].join(' ')}
                 style={{
-                    color,
+                    color: _color,
                     background: background || '#F7F7F7',
-                    border: `1px solid ${color}`,
+                    border: `1px solid ${_color}`,
                     fontSize: '14px'
                 }}>{children}</div>
         )
     }
+}
+
+Button.propTypes = {
+    onBtnClick: PropTypes.func,
+    disabled: PropTypes.bool,
+    children: PropTypes.oneOfType([
+        PropTypes.element,
+        PropTypes.string
+    ]),
+    color: PropTypes.string,
+    background: PropTypes.string,
+    shape: PropTypes.oneOf(['default', 'rectangular'])
 }
