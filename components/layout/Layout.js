@@ -4,7 +4,8 @@ import Header from '../header/Header'
 import styles from './Layout.module.scss'
 import Footer from '../footer/Footer'
 
-export default function Layout({ children }) {
+export default function Layout(props) {
+    const { children } = props
     useEffect(() => {
         import('amfe-flexible')
     })

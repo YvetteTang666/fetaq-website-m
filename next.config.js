@@ -4,6 +4,10 @@ const withTM = require('next-transpile-modules')([
   'antd-mobile',
 ])
 
-module.exports = withTM(withImages({
+// module.exports = withTM(withImages({
 
-}))
+// }))
+
+module.exports = withTM({
+
+})

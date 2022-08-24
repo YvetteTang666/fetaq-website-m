@@ -80,7 +80,7 @@ export default function HeroBanner() {
     return (
         <Swiper
             loop
-            autoplay={isAutoplay}
+            autoplay={false}
             indicator={(total, current) => (
                 <div className={styles.MCustomIndicatorWrapper}>
                     {
